@@ -1,2 +1,41 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
 
+/* font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+ */
+
+html {
+    /* Para generar scroll animados desde un punto de ancla */
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* aqui es donde defino variables que se van a repetir en mi codigo, por ejemplo, en lugar de repetir 40 veces un color, usamos este metodo */
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-secundaria:'Handlee', cursive;
+    --fontsize: 1em;
+    --anchomaximo: 68.750em;
+    --margingrid: 1em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Esto hace que la imagen escale y sea RESPONSIVE, se puede aplicar a todos los proyectos que tengan imagenes */
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: var(--fontsize);
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+
+}
 
