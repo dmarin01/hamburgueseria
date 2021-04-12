@@ -1,2 +1,159 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+/* font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+ */
+
+html {
+    /* Para generar scroll animados desde un punto de ancla */
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* aqui es donde defino variables que se van a repetir en mi codigo, por ejemplo, en lugar de repetir 40 veces un color, usamos este metodo */
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-secundaria:'Handlee', cursive;
+    --fontsize: 1em;
+    --anchomaximo: 68.750em;
+    --margingrid: 1em;
+    --padding: 0.625em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Esto hace que la imagen escale y sea RESPONSIVE, se puede aplicar a todos los proyectos que tengan imagenes */
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: var(--fontsize);
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+
+}
+
+/* START HEADER */
+
+header .nav-top {
+    background-color: var(--color-secundario);
+    padding: calc(var(--margingrid) *1.5) 0px;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
 
 
+header .nav-top a {
+    color: var(--color-principal);
+    text-decoration: none;
+
+}
+
+header .nav-top a span {
+    display: none;
+}
+
+header .nav-top a i {
+    font-size: 120%;
+}
+
+header nav {
+    padding: calc(var(--padding) * 1.5);
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav .logo a img {
+    max-width: 6.250em;
+}
+
+
+header nav .hamburguesa {
+    cursor: pointer; 
+}
+
+header nav .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: var(--padding);
+    width: 1.875em;    
+}
+
+header nav ul {
+    width: 100%;    
+}
+
+header nav .menu li a {
+    text-decoration: none;
+    color: #aaa;
+    display: block;
+    border-bottom: 1px solid #aaa;
+    text-align: center;
+    padding: calc(var(--padding) * 2);
+}
+
+header nav .menu li:last-child a{
+        border-bottom: none;
+}
+
+header nav .menu li .activo, header nav .menu li a:hover {
+    color: var(--color-principal);
+    transition: 1s;
+}
+
+
+
+
+
+
+
+/* HEADER END */
+
+
+/* MEDIAQUERIES */
+
+@media(min-width: 600px){
+    
+}
+
+
+@media(min-width: 768px){
+    header .nav-top a span {
+        display: inline;
+        color:whitesmoke;
+        margin-left: 5px;
+        
+}
+
+@media(min-width: 1004px) {
+    header nav .hamburguesa {
+        display: none; 
+    } 
+    header nav ul {
+         width: auto;   
+    }
+    header nav .menu li {
+        display: inline-block;
+    }
+    header nav .menu li a {
+        padding: 0.5em var(--padding);
+        border-bottom: none;
+    }
+    header {
+        box-shadow: 0px 1px 30px #aaa;
+        border-radius: 2px;
+    }
+}
