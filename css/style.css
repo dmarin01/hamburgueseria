@@ -314,6 +314,25 @@ main section .flex {
     flex-direction: column;
 }
 
+main .imagen .marco{
+    border: 5px solid var(--color-principal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main .imagen .marco img {
+    transform: rotate(-10deg);
+    transition: 1s;
+}
+
+main .imagen:hover .marco {
+    transform: rotateZ(0deg);
+}
+
+
+main .imagen:hover img {
+    transform: rotateZ(0deg);
+}
 
 /* ABOUT US END */
 /* MEDIAQUERIES */
