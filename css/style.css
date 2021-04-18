@@ -337,6 +337,12 @@ main .imagen:hover img {
 
 /* ABOUT US END */
 /* START MENU.HTML*/
+.content .menu_articles {
+    padding: 1em 0 0 2em;
+}
+.content .menu_articles p {
+    color:whitesmoke;
+}
 
 .background_menuhtml {
     background-color: var(--color-secundario);
@@ -345,6 +351,10 @@ main .imagen:hover img {
 
 .content  {
     padding: 2.125em 1.5em;
+}
+
+.content section h3 {
+    padding-bottom: 0.3em;
 }
 
 .content h2 {
@@ -360,6 +370,7 @@ main .imagen:hover img {
 .content .menulist ul {
     padding: var(--padding);
     margin: var(--margingrid);
+    
 }
 
 .content .menulist ul li {
@@ -380,6 +391,52 @@ main .imagen:hover img {
     border-radius: 5px;
 }
 
+.content .redline {
+    position: relative;
+    width: 4.250em;
+    margin: var(--margingrid);
+    color: var(--color-principal);
+    font-weight: 700;
+    margin-bottom: var(--margingrid);
+    
+}
+
+.content .redline hr{
+position: absolute;
+width: 3.250em;
+top: -20px;
+left: -15px;
+border-color: var(--color-principal);
+}
+
+.content section article .ordernow{
+    display: inline-block;
+    background-color: transparent;
+}
+
+.content  section article .ordernow .boton{
+    color: var(--color-principal);
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+    padding-left: 0px;
+}
+
+.content #h3_p {
+    padding: 0.5em 0 0.5em 0;
+}
+
+.content .flex_linea_precio {
+    display: flex;
+    width: 100%;
+    align-items: center;   
+}
+
+.content .flex_linea_precio p{
+    color:var(--color-principal);
+    padding: 0 2em 0 2em;   
+    font-weight: 700;
+}
 
 /* MENU.HTML END */
 
