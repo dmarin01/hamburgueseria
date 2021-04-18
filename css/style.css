@@ -357,6 +357,28 @@ main .imagen:hover img {
     color:var(--color-principal);
 }
 
+.content .menulist ul {
+    padding: var(--padding);
+    margin: var(--margingrid);
+}
+
+.content .menulist ul li {
+   padding: 0.5em;
+    
+}
+
+.content .menulist ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding: var(--padding);
+}
+
+.content .menulist ul li:hover {
+    background-color: var(--color-principal);
+    transition: 0.5s;
+    border-radius: 5px;
+}
 
 
 /* MENU.HTML END */
