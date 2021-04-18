@@ -86,7 +86,6 @@ header nav .logo a img {
     max-width: 6.250em;
 }
 
-
 header nav .hamburguesa {
     cursor: pointer; 
 }
@@ -150,6 +149,7 @@ footer a:hover {
     right: 10px;
     font-size: 250%;
 }
+
 /* FOOTER END */
 /* START HERO */
 
@@ -220,6 +220,7 @@ footer a:hover {
     transform: translateX(5px);
     transition: 0.5s;
 }
+
 /* HERO END */
 /* START MAIN OUR SERVICES */
 
@@ -335,6 +336,31 @@ main .imagen:hover img {
 }
 
 /* ABOUT US END */
+/* START MENU.HTML*/
+
+.background_menuhtml {
+    background-color: var(--color-secundario);
+    color:whitesmoke;
+}
+
+.content  {
+    padding: 2.125em 1.5em;
+}
+
+.content h2 {
+    font-family: var(--fuente-secundaria);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.content h2 span {
+    color:var(--color-principal);
+}
+
+
+
+/* MENU.HTML END */
+
 /* MEDIAQUERIES */
 
 @media(min-width: 600px){
