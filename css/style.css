@@ -335,6 +335,10 @@ main .imagen:hover img {
     transform: rotateZ(0deg);
 }
 
+main #aboutus .columna{
+    margin-left: 3em;
+}
+
 /* ABOUT US END */
 /* START MENU.HTML*/
 .content .menu_articles {
@@ -344,12 +348,9 @@ main .imagen:hover img {
     color:whitesmoke;
 }
 
-.background_menuhtml {
+.pagmenu {
     background-color: var(--color-secundario);
     color:whitesmoke;
-}
-
-.content  {
     padding: 2.125em 1.5em;
 }
 
@@ -439,6 +440,12 @@ border-color: var(--color-principal);
 }
 
 /* MENU.HTML END */
+/* START BLOG*/
+
+
+
+
+/* BLOG END*/
 
 /* MEDIAQUERIES */
 
@@ -477,6 +484,29 @@ border-color: var(--color-principal);
     .content #ourservices .grid article:last-child {
     grid-column: 3/4;
     }
+
+    
+    .container_menu {
+        display: flex;
+       
+    }
+    .lateral {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        max-width: 30%;
+    }
+
+    .today_section {
+        margin-left: 2.5em;
+        margin-top: 1em;
+    }
+
+    .menu_articles .columna .menuimg{
+        width: 8em;
+    }
+
 }
 
 @media(min-width: 1004px) {
