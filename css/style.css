@@ -86,7 +86,6 @@ header nav .logo a img {
     max-width: 6.250em;
 }
 
-
 header nav .hamburguesa {
     cursor: pointer; 
 }
@@ -150,6 +149,7 @@ footer a:hover {
     right: 10px;
     font-size: 250%;
 }
+
 /* FOOTER END */
 /* START HERO */
 
@@ -220,6 +220,7 @@ footer a:hover {
     transform: translateX(5px);
     transition: 0.5s;
 }
+
 /* HERO END */
 /* START MAIN OUR SERVICES */
 
@@ -334,7 +335,118 @@ main .imagen:hover img {
     transform: rotateZ(0deg);
 }
 
+main #aboutus .columna{
+    margin-left: 3em;
+}
+
 /* ABOUT US END */
+/* START MENU.HTML*/
+.content .menu_articles {
+    padding: 1em 0 0 2em;
+}
+.content .menu_articles p {
+    color:whitesmoke;
+}
+
+.pagmenu {
+    background-color: var(--color-secundario);
+    color:whitesmoke;
+    padding: 2.125em 1.5em;
+}
+
+.content section h3 {
+    padding-bottom: 0.3em;
+}
+
+.content h2 {
+    font-family: var(--fuente-secundaria);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.content h2 span {
+    color:var(--color-principal);
+}
+
+.content .menulist ul {
+    padding: var(--padding);
+    margin: var(--margingrid);
+    
+}
+
+.content .menulist ul li {
+   padding: 0.5em;
+    
+}
+
+.content .menulist ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding: var(--padding);
+}
+
+.content .menulist ul li:hover {
+    background-color: var(--color-principal);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.content .redline {
+    position: relative;
+    width: 4.250em;
+    margin: var(--margingrid);
+    color: var(--color-principal);
+    font-weight: 700;
+    margin-bottom: var(--margingrid);
+    
+}
+
+.content .redline hr{
+position: absolute;
+width: 3.250em;
+top: -20px;
+left: -15px;
+border-color: var(--color-principal);
+}
+
+.content section article .ordernow{
+    display: inline-block;
+    background-color: transparent;
+}
+
+.content  section article .ordernow .boton{
+    color: var(--color-principal);
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+    padding-left: 0px;
+}
+
+.content #h3_p {
+    padding: 0.5em 0 0.5em 0;
+}
+
+.content .flex_linea_precio {
+    display: flex;
+    width: 100%;
+    align-items: center;   
+}
+
+.content .flex_linea_precio p{
+    color:var(--color-principal);
+    padding: 0 2em 0 2em;   
+    font-weight: 700;
+}
+
+/* MENU.HTML END */
+/* START BLOG*/
+
+
+
+
+/* BLOG END*/
+
 /* MEDIAQUERIES */
 
 @media(min-width: 600px){
@@ -372,6 +484,29 @@ main .imagen:hover img {
     .content #ourservices .grid article:last-child {
     grid-column: 3/4;
     }
+
+    
+    .container_menu {
+        display: flex;
+       
+    }
+    .lateral {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        max-width: 30%;
+    }
+
+    .today_section {
+        margin-left: 2.5em;
+        margin-top: 1em;
+    }
+
+    .menu_articles .columna .menuimg{
+        width: 8em;
+    }
+
 }
 
 @media(min-width: 1004px) {
